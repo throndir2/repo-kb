@@ -1,0 +1,25 @@
+{
+  "name": "repo-kb",
+  "version": "0.1.0",
+  "description": "Local per-repository knowledge base (hybrid BM25 + local embeddings) over Markdown docs, with a CLI and an MCP server",
+  "type": "module",
+  "license": "MIT",
+  "repository": "github:throndir2/repo-kb",
+  "bin": {
+    "repo-kb": "bin/repo-kb.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  }
+}
